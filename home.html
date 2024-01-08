@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                  screens:{
+                    'sm':'360px',
+                    'md':'740px',
+                    'lg':'1220px'
+                  },
+                  fontFamily:{
+                    'cstm':['Poppins','sans-serif'],
+                  }
+                },
+              },
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-dGL2pQ8iXzSLKlDjGPhBXqU2XeHS9iX2+Br48PJcpLMyqK8c4zcVE1TGKIsjz9UH" crossorigin="anonymous">
     <title>Beruporto</title>
 </head>
+
 <body class="bg-sky-300 font-cstm">
     <div class="container mx-auto my-10 py-2 w-fit border-2 border-solid border-black bg-yellow-300 rounded-full" data-aos="flip-down" data-aos-duration="3000">
         <nav class="sm:px-10 sm:py-5 md:px-28 md:py-5 lg:px-52 lg:py-5">
@@ -46,9 +64,11 @@
         <p class="bg-black text-white text-center py-6">&copy;2024 Albert Wijaya. All Right Reserved.</p>
     </footer>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
 </body>
 </html>
